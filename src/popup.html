@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./popup/popup.css" />
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- 사이트 등록 -->
+        <div class="card">
+            <h3>사이트 등록</h3>
+
+            <input id="siteNameInput" placeholder="사이트 이름 (예: YouTube)" value="" />
+            <input id="siteUrlInput" placeholder="사이트 주소 (예: youtube.com)" value="" />
+
+            <button id="addBtn">추가</button>
+        </div>
+
+        <!-- 중독 방지 사이트 -->
+        <div class="card">
+            <h3>중독 방지 사이트 List</h3>
+
+            <div class="list-header">
+                <div>사이트 이름</div>
+                <div>사이트 주소</div>
+                <div style="text-align:right;">삭제</div>
+            </div>
+
+            <ul id="siteList"></ul>
+        </div>
+
+    </div>
+
+    <script type="module" src="./popup/popup.js"></script>
+</body>
+
+</html>

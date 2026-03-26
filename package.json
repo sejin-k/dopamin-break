@@ -1,0 +1,12 @@
+{
+    "name": "chrome-extension",
+    "version": "1.0.0",
+    "scripts": {
+        "build": "vite build",
+        "dev": "vite build --watch",
+        "icons": "node generate-icons.mjs"
+    },
+    "devDependencies": {
+        "vite": "^5.0.0"
+    }
+}
