@@ -72,5 +72,12 @@ addBtn.addEventListener("click", async () => {
     load();
 });
 
+// Enter 키로 추가
+[siteNameInput, siteUrlInput].forEach((input) => {
+    input.addEventListener("keydown", (e) => {
+        if (e.key === "Enter") addBtn.click();
+    });
+});
+
 // 초기 실행
 load();

@@ -28,7 +28,7 @@ export function showModal(site, { onAccept, onReject }) {
 
     modal.innerHTML = `
         <div id="site-blocker-message">
-            ${site.message || getMessage(site)}
+            ${getMessage(site)}
         </div>
 
         <button id="site-blocker-continue-btn">
